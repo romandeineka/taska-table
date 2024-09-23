@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      
+      <aside class="sidebar" id="sidebar">
+        <div>
+          <div class="sidebar-logo">
+            <img src="./assets/logo.svg" alt="logo" />
+            <h1 class="sidebar-logo__title">Dashboard</h1>
+            <span class="sidebar-logo__version">v.01</span>
+          </div>
+          <nav class="sidebar__menu">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/dashboard.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text">Dashboard</p>
+                  </div>
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/product.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text">Product</p>
+                  </div>
+                  <img
+                    class="sidebar__link-arrow"
+                    src="./assets/icon-menu/arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link sidebar__link--active">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/customers.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text sidebar__link--active">
+                      Customers
+                    </p>
+                  </div>
+                  <img
+                    class="sidebar__link-arrow"
+                    src="./assets/icon-menu/arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/income.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text">Income</p>
+                  </div>
+                  <img
+                    class="sidebar__link-arrow"
+                    src="./assets/icon-menu/arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/promote.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text">Promote</p>
+                  </div>
+                  <img
+                    class="sidebar__link-arrow"
+                    src="./assets/icon-menu/arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <div class="sidebar__link-wrap">
+                    <img
+                      class="sidebar__link-logo"
+                      src="./assets/icon-menu/help.svg"
+                      alt="logo"
+                    />
+                    <p class="sidebar__link-text">Help</p>
+                  </div>
+                  <img
+                    class="sidebar__link-arrow"
+                    src="./assets/icon-menu/arrow.svg"
+                    alt="arrow"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="sidebar__user">
+          <img src="./assets/icon-menu/avatar.svg" alt="avatar" />
+          <div class="sidebar__user-info">
+            <p class="sidebar__user-name">Evano</p>
+            <span class="sidebar__user-role">Project Manager</span>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="header">
+          <h2 class="header__title">Hello Evano 👋,</h2>
+        </header>
+
+        <section class="customers">
+          <div class="customers__wrap">
+            <div class="customers__wrap-text">
+              <h2 class="customers__title">All Customers</h2>
+              <span class="customers__descr">Active Members</span>
+            </div>
+            <div class="search">
+              <input type="text" class="search__input" />
+              <i class="fa fa-search search__icon"></i>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="customers-table">
+              <thead class="customers-table__head">
+                <tr class="customers-table__row">
+                  <th class="customers-table__header">Customer Name</th>
+                  <th class="customers-table__header">Company</th>
+                  <th class="customers-table__header">Phone Number</th>
+                  <th class="customers-table__header">Email</th>
+                  <th class="customers-table__header">Country</th>
+                  <th class="customers-table__header">Status</th>
+                </tr>
+              </thead>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--active">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--inactive">Inactive</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--inactive">Inactive</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--active">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--active">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--active">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--active">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="customers-table__body">
+                <tr class="customers-table__row">
+                  <td class="customers-table__cell">Jane Cooper</td>
+                  <td class="customers-table__cell">Microsoft</td>
+                  <td class="customers-table__cell">(225) 555-0118</td>
+                  <td class="customers-table__cell">jone@microsoft.com</td>
+                  <td class="customers-table__cell">United States</td>
+                  <td class="customers-table__cell">
+                    <span class="status status--inactive">Inactive</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="container">
+            <p class="container__title">Showing data 1 to 8 of 256K entries</p>
+            <div class="pagination">
+              <a href="#">
+                <img src="./assets/arrow-left.svg" alt="Previous" />
+              </a>
+              <div class="pagination__numbers" id="page-numbers">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>...</span>
+                <a href="#">40</a>
+              </div>
+              <a href="#">
+                <img src="./assets/arrow-right.svg" alt="Next" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
